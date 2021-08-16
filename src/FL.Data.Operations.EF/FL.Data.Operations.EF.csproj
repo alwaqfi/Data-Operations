@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EFExecutionConfig.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FL.Data.Operations.Utilities\FL.Data.Operations.Utilities.csproj" />
+    <ProjectReference Include="..\FL.Data.Operations\FL.Data.Operations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+
+</Project>

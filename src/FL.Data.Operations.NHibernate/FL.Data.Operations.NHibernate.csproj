@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net472;netcoreapp3.1</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FL.Data.Operations.Utilities\FL.Data.Operations.Utilities.csproj" />
+    <ProjectReference Include="..\FL.Data.Operations\FL.Data.Operations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FL.ExpressionToSQL">
+      <HintPath>..\..\ExternalLibraries\FL.ExpressionToSQL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
